@@ -110,17 +110,6 @@ button.mfp-close {
 	background-size: contain;
 }
 
-.mfp-figure {
-	max-width: 700px;
-}
-
-.mfp-arrow {
-	opacity: 1;
-	width: 30px;
-	height: 30px;
-	margin-top: 0;
-}
-
 button.mfp-arrow {
 	&:before {
 		background-image: url("../img/arrows.png");
@@ -253,13 +242,13 @@ header {
 			}
 
       .grid {
-        grid-template-columns: 28% 70%;
+				grid-template-columns: 24% 70%;
 				align-items: center;
       }
 
       .coupon {
         background: url("../img/svg/bgGroup.svg"), linear-gradient(96.42deg, #7002FE -1.34%, #3459A2 53.06%);
-				padding: 20px 0;
+				padding: 20px;
 				background-position-x: 80%;
 				background-size: 107%;
 				background-position-y: 15%;
@@ -728,9 +717,16 @@ header {
 		padding: 29px 33px;
 	}
 
+	.picture.flex {
+		max-width: 680px;
+		max-height: 500px;
+	}
+
 	.picture {
 		position: relative;
 		z-index: 1;
+		max-width: 680px;
+		max-height: 500px;
 
 		&:before {
 			content: '';
@@ -761,8 +757,8 @@ header {
 		}
 
 		.pic {
-			width: 400px;
-			height: 350px;
+			width: 364px;
+			height: 276px;
 			position: absolute;
 			top: 16vw;
 			left: 0;
@@ -774,8 +770,8 @@ header {
 		}
 
 		.photo {
-			width: 500px;
-			height: 400px;
+			width: 437px;
+			height: 341px;
 			position: absolute;
 			top: 0;
 			left: 18vw;
@@ -953,3 +949,5 @@ footer {
 		}
 	}
 }
+
+@import url(./Popup);
