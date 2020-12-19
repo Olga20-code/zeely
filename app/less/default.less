@@ -95,9 +95,13 @@ input{
 }
 input:not([type="submit"]){
 	width: 100%;
-	height: 43px;
-	padding: 28px 15px;
+	height: 55px;
+	padding: 0 15px;
 	font-size: 13px;
+}
+select{
+	padding: 0 15px;
+	height: 55px;
 }
 textarea{
 	max-width: 100%;
@@ -120,3 +124,12 @@ strong{
 ::-moz-placeholder {color: #C8C8C8;}
 :-moz-placeholder {color: #C8C8C8;}
 :-ms-input-placeholder {color: #C8C8C8;}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+
+	&.justify-between{
+		justify-content: space-between;
+	}
+}

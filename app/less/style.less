@@ -22,7 +22,8 @@
 }
 
 .btn{
-	padding: 15px 30px;
+	padding: 0 30px;
+	height: 55px;
 	background: @white;
 	cursor: pointer;
 	text-align: center;
@@ -134,17 +135,17 @@ button.mfp-arrow {
 }
 
 header {
-	padding: 50px 0 44px 0;
+	padding: 30px 0;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 
 	.logo {
-		max-width: 320px;
+		max-width: 240px;
 	}
 
 	.login {
 		.btn {
 			color: @green;
-			font-size: 18px;
+			font-size: 16px;
 		}
 
 		.registration {
@@ -162,12 +163,15 @@ header {
 
 	.grid {
 		align-items: flex-start;
+		grid-template-columns: 34vw 1fr;
+		grid-gap: 30px;
 	}
 
 	.popup-gallery {
 		a {
-			max-width: 174px;
+			max-width: 100%;
 			margin-right: 4px;
+			width: 100%;
 
 			img {
 				object-fit: cover;
@@ -181,16 +185,13 @@ header {
 			display: none;
 		}
 	}
-
-	.main-gallery {
-		a {
-			max-width: 537px;
-		}
+	.gallery-min{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
 	}
 
 	.text {
-		margin-left: -25px;
-
 		.contact {
 			.image {
 				max-width: 127px;
@@ -201,9 +202,14 @@ header {
 				img {
 					width: 58px;
 					height: 58px;
+					min-width: 58px;
 					background: @grey;
 					padding: 8px 16px;
 					border-radius: 5px;
+				}
+				a{
+					color: #000;
+					line-height: 1.4;
 				}
 			}
 
@@ -234,7 +240,7 @@ header {
 			}
 
       .grid {
-        grid-template-columns: 28% 70%;
+        grid-template-columns: 123px 1fr;
 				align-items: center;
       }
 
@@ -261,6 +267,7 @@ header {
         }
 
 				.sale {
+					width: 100%;
 					h4 {
 						color: @white;
 						letter-spacing: .5px;
@@ -275,13 +282,12 @@ header {
 					}
 
 					.grid {
-						grid-template-columns: 85% 39%;
+						grid-template-columns: 1fr 170px;
 						grid-gap: 10px;
 					}
 
 					.btn {
 						border-radius: 5px;
-						padding: 21px 15px;
 						color: @blue;
 						font-family: 'proxima_novabold', sans-serif;
 					}
@@ -415,7 +421,6 @@ header {
 			border: 1px solid @white;
 			border-radius: 5px;
 			color: #C8C8C8;
-			padding: 23px 35px;
 			appearance: none;
 		}
 
@@ -425,13 +430,8 @@ header {
 			font-size: 15px;
 		}
 
-		input {
-			padding: 31px 35px;
-		}
-
 		.btn {
 			border-radius: 5px;
-			padding: 21px 15px;
 			color: @blue;
 			font-family: 'proxima_novabold', sans-serif;
 		}
@@ -705,7 +705,6 @@ header {
 		border: 1px solid @green;
 		border-radius: 5px;
 		width: 100%;
-		padding: 29px 33px;
 	}
 
 	.picture {
@@ -858,7 +857,6 @@ footer {
 		color: @blue;
 		font-family: 'proxima_novabold', sans-serif;
 		border-radius: 5px;
-		padding: 30px 40px;
 		margin: 25px 0;
 	}
 
@@ -926,6 +924,37 @@ footer {
 			bottom: 0;
 			right: 0;
 			z-index: 10;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	header{
+		.login .btn{
+			height: 50px;
+			font-size: 14px;
+		}
+		.logo{
+			max-width: 180px;
+		}
+	}
+	.btn{
+		font-size: 12px;
+	}
+	.center{
+		padding: 0 15px;
+		max-width: 560px;
+	}
+}
+@media screen and (max-width: 620px){
+	header {
+		padding: 13px 0 5px 0;
+		
+		.login{
+			display: none;
+		}
+		.flex{
+			justify-content: center!important;
 		}
 	}
 }

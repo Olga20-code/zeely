@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063e1198-a986-4410-bb16-5b01b0a0098d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/less/Popup.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/default.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/libs.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/libs.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/scripts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/less/default.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/default.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libs/magnific-popup/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/magnific-popup/magnific-popup.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608374666223</updated>
-      <workItem from="1608374667386" duration="1740000" />
+      <workItem from="1608374667386" duration="6195000" />
     </task>
     <servers />
   </component>
