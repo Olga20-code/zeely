@@ -1,0 +1,122 @@
+@import url(./mixin.less);
+
+html{
+	height: 100%;
+}
+html, body{
+	margin: 0;
+}
+body{
+	position: relative;
+	font-size: 14px;
+	min-height: 100%;
+}
+*{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	padding: 0;
+	margin: 0;
+
+	&::selection {
+		background: #e8334d;
+		color: #fff;
+	}
+}
+img{
+	max-width: 100%;
+	display: inline-block;
+}
+a{
+	display: inline-block;
+	color: @blue;
+	text-decoration: none;
+	.transition;
+
+	font-family: 'proxima_novabold', sans-serif;
+	font-size: 13px;
+	line-height: 26px;
+
+	&:hover{
+		color: #fff;
+	}
+}
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	font-weight: normal;
+	font-family: 'proxima_novaregular', sans-serif;
+}
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size: 36px;
+	font-family: 'proxima_novabold', sans-serif;
+	line-height: 40px;
+	color: @black;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	font-size: 28px;
+	line-height: 28px;
+	font-family: 'proxima_novabold', sans-serif;
+}
+h5{
+	font-size: 20px;
+	line-height: 20px;
+}
+h6{
+	font-size: 14px;
+	line-height: 23px;
+	color: @white;
+	font-weight: 600;
+}
+p{
+	color: @black;
+	font-family: 'proxima_novabold', sans-serif;
+}
+ul{
+	list-style: none;
+}
+button{
+	border: none;
+	cursor: pointer;
+	border-radius: 0;
+	appearance: none;
+}
+input{
+	appearance: none;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	background: transparent;
+	color: #C8C8C8;
+}
+input:not([type="submit"]){
+	width: 100%;
+	height: 43px;
+	padding: 28px 15px;
+	font-size: 13px;
+}
+textarea{
+	max-width: 100%;
+	outline: none;
+	border: none;
+	display: block;
+	padding: 15px 0;
+	min-height: 178px;
+	font-size: 16px;
+	width: 100%;
+	resize: none;
+}
+address{
+	font-style: normal;
+}
+strong{
+	font-weight: 700;
+}
+::-webkit-input-placeholder {color: #C8C8C8;}
+::-moz-placeholder {color: #C8C8C8;}
+:-moz-placeholder {color: #C8C8C8;}
+:-ms-input-placeholder {color: #C8C8C8;}
