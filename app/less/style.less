@@ -39,7 +39,7 @@
 .center{
 	position: relative;
 	max-width: 1300px;
-	padding: 0 40px;
+	padding: 0 50px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -135,7 +135,7 @@ button.mfp-arrow {
 }
 
 header {
-	padding: 50px 0 44px 0;
+	padding: 50px 0 37px 0;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 
 	.logo {
@@ -143,9 +143,13 @@ header {
 	}
 
 	.login {
+		margin-right: 5px;
+		margin-bottom: 10px;
+
 		.btn {
 			color: @green;
 			font-size: 18px;
+			padding: 17px 37px;
 		}
 
 		.registration {
@@ -159,7 +163,7 @@ header {
 }
 
 .card-main {
-	padding: 50px 0 44px 0;
+	padding: 50px 0 41px 0;
 
 	.grid {
 		align-items: flex-start;
@@ -234,11 +238,11 @@ header {
         font-size: 20px;
         line-height: 24px;
         font-family: 'proxima_novaregular', sans-serif;
-				padding: 15px 0px 50px 0px;
+				padding: 15px 0px 67px 0px;
       }
 
 			h2 {
-				padding-top: 50px;
+				padding-top: 45px;
 			}
 
       .grid {
@@ -328,6 +332,11 @@ header {
 			}
 		}
 	}
+
+	.list.grid-small {
+		margin-top: 25px;
+		grid-template-columns: 23% 19% 20%;
+	}
 }
 
 .product {
@@ -402,11 +411,17 @@ header {
 .request {
 	margin: 50px 0;
 
+	.grid-big {
+		grid-template-columns: 25% 25% 25% 22%;
+		grid-gap: 10px;
+	}
+
 	.text {
 		background: url("../img/svg/bgCircle.svg"), linear-gradient(94.22deg, #7002FE -0.29%, #3459A2 49.14%);;
 		background-repeat: no-repeat;
 		border-radius: 5px;
 		padding: 40px 25px;
+		padding-bottom: 49px;
 
 		h2 {
 			color: @white;
@@ -416,7 +431,8 @@ header {
 			font-family: 'proxima_novaregular', sans-serif;
 			font-size: 20px;
 			color: @white;
-			padding: 20px 0;
+			padding: 10px 0;
+			padding-bottom: 17px;
 		}
 
 		select {
@@ -451,7 +467,7 @@ header {
 .about {
 	.grid {
 		grid-template-columns: 33% 44%;
-		grid-gap: 15vw;
+		grid-gap: 13.5vw;
 		align-items: baseline;
 	}
 
@@ -461,8 +477,14 @@ header {
 		}
 	}
 
+	.rating {
+		.flex {
+			margin-bottom: 33px;
+		}
+	}
+
 	h2 {
-		margin-bottom: 35px;
+		margin-bottom: 29px;
 	}
 
 	p {
@@ -504,7 +526,8 @@ header {
 	}
 
 	p {
-		font-size: 16px;
+		font-size: 12px;
+		line-height: 17px;
 	}
 
 	.rait {
@@ -534,7 +557,7 @@ header {
 			}
 
 			.pic {
-				width: 40px;
+				width: 55px;
 				height: 25px;
 
 				img {
@@ -546,11 +569,12 @@ header {
 }
 
 .reviews {
-	padding: 50px 0;
+	padding: 7px 0;
 
 	.grid-small {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 20px;
+		grid-template-columns: 35% 30% 30%;
+		grid-gap: 12px;
+		grid-column-gap: 17px;
 	}
 
 	.item {
@@ -566,22 +590,23 @@ header {
 		}
 
 		p {
-			font-size: 17px;
-			line-height: 23px;
+			font-size: 13px;
+			line-height: 22px;
 			font-family: 'proxima_novaregular', sans-serif;
 		}
 
 		.flex {
+			padding: 0 5px;
 			padding-top: 30px;
 			max-width: 100%;
 			position: absolute;
-			bottom: 20px;
+			bottom: 28px;
 			left: 20px;
 			width: 90%;
 
 			.data {
 				position: absolute;
-				right: 0;
+				right: 10px;
 			}
 		}
 
@@ -611,29 +636,34 @@ header {
 		.arrow {
 			position: absolute;
 			top: 0;
-			right: 3%;
+			right: 3vw;
 			background: url("../img/svg/prev.svg") no-repeat;
 			width: 16px;
 			height: 28px;
 		}
 
 		.prev {
-			top: 5px;
+			top: 54px;
 		}
 
 		.next {
 			width: 21px;
 			height: 37px;
 			background: url("../img/svg/next.svg") no-repeat;
-			right: 0;
+			right: 2px;
+			top: 50px;
 		}
 	}
 }
 
 .advantages {
+	padding: 65px 0;
+	padding-bottom: 31px;
+
 	.grid-small {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 27% 27% 33%;
 		grid-gap: 50px;
+		margin-top: 41px;
 	}
 
 	.list {
@@ -669,6 +699,7 @@ header {
 
 .specialOffer {
 	padding: 50px 0;
+	padding-bottom: 78px;
 
 	.grid {
 		grid-template-columns: 40% 60%;
@@ -691,20 +722,21 @@ header {
 	h4 {
 		font-size: 25px;
 		line-height: 33px;
-		padding: 15px 0;
+		padding: 10px 0;
+		padding-bottom: 5px;
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 15px;
 		line-height: 25px;
 		color: #111;
 		font-family: 'proxima_novaregular', sans-serif;
-		padding-bottom: 25px;
+		padding-bottom: 18px;
 	}
 
 	input {
 		border: 1px solid #505050;
-		padding: 31px 33px;
+		padding: 36px 33px;
 		margin: 5px 0;
 	}
 
@@ -798,10 +830,12 @@ header {
 }
 
 .team {
-	padding-bottom: 81px;
+	padding-bottom: 75px;
+
 	.grid-small {
 		grid-template-columns: 25% 25% 25%;
-		grid-gap: 15px;
+		grid-gap: 0;
+		margin-top: 48px;
 	}
 
 	.item {
@@ -828,17 +862,17 @@ header {
 			max-width: 252px;
 			position: absolute;
 			z-index: 5;
-			bottom: 10px;
-			left: 15px;
+			bottom: 15px;
+			left: 17px;
 			right: 0;
-			padding: 15px;
+			padding: 12px 15px;
 		}
 	}
 }
 
 footer {
 	background: linear-gradient(91.69deg, #7002FE 0.42%, #3459A2 99.52%);
-	padding: 52px 0;
+	padding: 55px 0;
 	position: relative;
 	padding-bottom: 0;
 	overflow: hidden;
@@ -859,6 +893,10 @@ footer {
 		align-items: flex-start;
 	}
 
+  .text {
+    min-width: 624px;
+  }
+
 	h2 {
 		color: @white;
 		font-size: 45px;
@@ -866,6 +904,7 @@ footer {
 	}
 
 	p {
+		padding-top: 6px;
 		font-size: 25px;
 		line-height: 32px;
 		font-family: 'proxima_novaregular', sans-serif;
@@ -878,7 +917,7 @@ footer {
 		color: @blue;
 		font-family: 'proxima_novabold', sans-serif;
 		border-radius: 5px;
-		padding: 30px 40px;
+		padding: 13px 40px;
 		margin: 25px 0;
 	}
 
@@ -922,10 +961,10 @@ footer {
 	.image {
 		width: 100%;
 		height: 505px;
+		position: relative;
 
 		.phone {
 			position: relative;
-			width: 291px;
 			height: 515px;
 
 			&:after {
@@ -944,10 +983,11 @@ footer {
 			flex-direction: column;
 			position: absolute;
 			bottom: 0;
-			right: 0;
+			right: 20px;
 			z-index: 10;
 		}
 	}
 }
 
 @import url(./Popup);
+@import url(./media);
