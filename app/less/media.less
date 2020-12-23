@@ -1,4 +1,24 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
+  .advantages {
+    .grid-small {
+      grid-template-columns: 31% 31% 29%;
+    }
+  }
+
+  .reviews {
+    .item {
+      iframe {
+        width: 112%;
+      }
+    }
+  }
+
+  .team {
+     .grid-small {
+       grid-column-gap: 90px;
+     }
+  }
+
   footer {
     .image {
       .social {
@@ -15,27 +35,142 @@
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .reviews {
+    .grid-small {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
 @media screen and (max-width: 960px) {
+  .center {
+    max-width: 750px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .request {
+    .text {
+      padding: 30px 25px;
+
+      h2 {
+        font-size: 27px;
+      }
+
+      .btn {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .about {
+    h6 {
+      font-size: 13px;
+    }
+    .grid {
+      grid-template-columns: 44% 66%;
+      grid-gap: 50px;
+    }
+
+    .special {
+      width: 60px;
+      height: 60px;
+    }
+
+    .aboutText {
+      img {
+        max-width: 100px;
+      }
+    }
+
+    .rating {
+      max-width: 318px;
+
+      .confirm.flex {
+        div {
+          margin: 0;
+        }
+
+        .pic {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .reviews {
+    .list {
+      .prev{
+        right: 5vw;
+      }
+    }
+  }
+
+  .advantages {
+    padding: 90px 0;
+    padding-bottom: 31px;
+    .grid-small {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .team {
+    .grid-small {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+    }
+  }
+
   footer {
+    padding: 40px 0;
+    padding-bottom: 0;
+
     .grid {
       grid-template-columns: 68% 32%;
     }
     &:before {
       right: -200px;
-      opacity: .3;
+      opacity: .2;
     }
     .text {
       min-width: 460px;
     }
 
     .logo.grid {
-      grid-template-columns: 32% 60%;
+      grid-template-columns: 32% 45%;
+    }
+
+    .logo {
+      position: absolute;
     }
 
     .image {
-      .phone:after {
-        left: 50px;
+      .phone{
+        width: 290px;
+
+        &:after {
+          left: 8vw;
+          bottom: 5px;
+        }
       }
+
+      .social {
+        left: 0vw;
+        bottom: 12vw;
+      }
+    }
+
+    .menu {
+      position: absolute;
+      bottom: 7vw;
+    }
+
+    .btn {
+      font-size: 15px;
+      padding: 13px 30px;
     }
 
     h2 {
@@ -45,6 +180,105 @@
     p {
       font-size: 22px;
       max-width: 460px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    .grid {
+      grid-template-columns: 1fr;
+      padding: 0 25px;
+    }
+
+    .rating {
+      max-width: 100%;
+    }
+  }
+
+  footer {
+    max-height: 100%;
+    &:before {
+      display: none;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .logo {
+      position: relative;
+    }
+
+    .menu {
+      position: relative;
+      bottom: 0;
+    }
+
+    .image {
+      .phone {
+        width: 100%;
+        &:after {
+          bottom: -5vw;
+          left: 25%;
+        }
+      }
+
+      .social {
+        bottom: 5vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about {
+    .flex {
+      flex-direction: column;
+    }
+
+    .rating {
+      .confirm {
+        .flex {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  .team {
+    .grid-small {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .reviews {
+    .grid-small {
+      grid-template-columns: 1fr;
+      grid-gap: 25px;
+    }
+
+    .item {
+      margin: 0 30px;
+
+      .flex {
+        padding-top: 30px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    .list {
+      .prev {
+        right: 10vw;
+      }
+    }
+  }
+
+  .advantages {
+    .grid-small {
+      grid-template-columns: 1fr;
     }
   }
 }

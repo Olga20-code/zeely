@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="063e1198-a986-4410-bb16-5b01b0a0098d" name="Default Changelist" comment="">
+    <list default="true" id="f33deaa1-23e4-4f0f-a578-e522a629dd65" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/default.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/libs.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/libs.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/media.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/less/default.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/default.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/less/media.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/media.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libs/magnific-popup/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/magnific-popup/magnific-popup.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -66,12 +66,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="063e1198-a986-4410-bb16-5b01b0a0098d" name="Default Changelist" comment="" />
+      <changelist id="f33deaa1-23e4-4f0f-a578-e522a629dd65" name="Default Changelist" comment="" />
       <created>1608374666223</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608374666223</updated>
       <workItem from="1608374667386" duration="1740000" />
+      <workItem from="1608568577000" duration="816000" />
+      <workItem from="1608613692338" duration="10357000" />
+      <workItem from="1608708264031" duration="7579000" />
     </task>
     <servers />
   </component>
@@ -88,5 +91,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

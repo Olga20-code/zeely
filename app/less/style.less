@@ -574,7 +574,11 @@ header {
 	.grid-small {
 		grid-template-columns: 35% 30% 30%;
 		grid-gap: 12px;
-		grid-column-gap: 17px;
+		grid-column-gap: 27px;
+	}
+
+	.item-video {
+		background: none!important;
 	}
 
 	.item {
@@ -587,6 +591,7 @@ header {
 			border-radius: 5px;
 			object-fit: cover;
 			margin: -20px -22px;
+			width: 423px;
 		}
 
 		p {
@@ -614,6 +619,10 @@ header {
 			font-size: 16px;
 			color: @black;
 		}
+	}
+
+	.item:nth-child(3) {
+		display: none;
 	}
 
 	.add {
@@ -685,8 +694,8 @@ header {
 			height: 58px;
 		}
 
-		div:nth-child(2) {
-			max-width: 254px;
+		div:nth-child(1) {
+			min-width: 58px;
 		}
 
 		p {
@@ -833,12 +842,15 @@ header {
 
 	.grid-small {
 		grid-template-columns: 25% 25% 25%;
-		grid-gap: 0;
+		grid-gap: 10px;
 		margin-top: 48px;
 	}
 
 	.item {
 		position: relative;
+		max-width: 300px;
+		max-height: 327px;
+
 		img {
 			border-radius: 5px;
 		}
@@ -874,6 +886,7 @@ footer {
 	padding: 55px 0;
 	position: relative;
 	padding-bottom: 0;
+	max-height: 560px;
 	overflow: hidden;
 
 	&:before {
