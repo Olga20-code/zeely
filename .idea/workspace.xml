@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f33deaa1-23e4-4f0f-a578-e522a629dd65" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/default.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.rar" beforeDir="false" afterPath="$PROJECT_DIR$/app.rar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/media.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/less/media.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/media.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/style.less" afterDir="false" />
@@ -74,7 +75,7 @@
       <workItem from="1608374667386" duration="1740000" />
       <workItem from="1608568577000" duration="816000" />
       <workItem from="1608613692338" duration="10357000" />
-      <workItem from="1608708264031" duration="7579000" />
+      <workItem from="1608708264031" duration="14425000" />
     </task>
     <servers />
   </component>

@@ -52,9 +52,48 @@
     font-size: 30px;
   }
 
+  .card-main {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .popup-gallery {
+      max-width: 100%;
+    }
+    .list.grid-small {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .text {
+      .contact {
+        flex-direction: column;
+      }
+
+      .description {
+        .grid {
+          grid-template-columns: 118px 1fr;
+        }
+
+        .coupon {
+          .coup-text {
+            margin-left: -20px;
+          }
+        }
+      }
+    }
+  }
+
+  .product {
+    .grid-big {
+      grid-template-columns: 50% 50%;
+      margin: 40px;
+    }
+  }
+
   .request {
     .text {
       padding: 30px 25px;
+      background-size: contain;
 
       h2 {
         font-size: 27px;
@@ -185,6 +224,29 @@
 }
 
 @media screen and (max-width: 700px) {
+  .card-main {
+    .text {
+      .description {
+        .coupon {
+          background: url("../img/bg.png")!important;
+          background-repeat: no-repeat!important;
+          background-size: cover!important;
+        }
+      }
+      .contact {
+        .address,
+        .phone {
+          min-width: 0;
+        }
+      }
+    }
+
+    .list.grid-small {
+      grid-template-columns: 210px 150px;
+      grid-gap: 20px;
+    }
+  }
+
   .about {
     .grid {
       grid-template-columns: 1fr;
@@ -231,6 +293,28 @@
 }
 
 @media screen and (max-width: 550px) {
+  .card-main {
+
+  }
+
+  .product {
+    .grid-big {
+      grid-template-columns: 1fr;
+      margin: 0;
+      margin-top: 40px;
+    }
+  }
+
+  .request {
+    .grid-big {
+      grid-template-columns: 50% 50%;
+    }
+
+    .text {
+      background: linear-gradient(94.22deg,#7002fe -.29%,#3459a2 49.14%);
+    }
+  }
+
   .about {
     .flex {
       flex-direction: column;
