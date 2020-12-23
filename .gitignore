@@ -2,3 +2,8 @@
 /node_modules/
 .idea/
 app.rar
+app/css/style.min.css
+app/css/libs.min.css
+app/css/media.min.css
+app/css/mixin.min.css
+app/css/Popup.min.css
