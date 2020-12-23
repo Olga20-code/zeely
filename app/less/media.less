@@ -146,6 +146,15 @@
         right: 5vw;
       }
     }
+
+    .grid-small {
+      grid-template-columns: 1fr 1fr!important;
+      grid-gap: 25px;
+    }
+
+    .item:nth-child(3) {
+      display: none;
+    }
   }
 
   .advantages {
@@ -337,7 +346,7 @@
 
   .reviews {
     .grid-small {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr!important;
       grid-gap: 25px;
     }
 
