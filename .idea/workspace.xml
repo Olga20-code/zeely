@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="063e1198-a986-4410-bb16-5b01b0a0098d" name="Default Changelist" comment="">
+    <list default="true" id="56295327-1c9f-419a-8e00-1bf826bd3bab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/default.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/libs.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/libs.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/less/default.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/default.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libs/magnific-popup/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/magnific-popup/magnific-popup.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +61,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="063e1198-a986-4410-bb16-5b01b0a0098d" name="Default Changelist" comment="" />
+      <changelist id="56295327-1c9f-419a-8e00-1bf826bd3bab" name="Default Changelist" comment="" />
       <created>1608374666223</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608374666223</updated>
       <workItem from="1608374667386" duration="1740000" />
+      <workItem from="1608538844016" duration="31000" />
+      <workItem from="1608748514146" duration="328000" />
     </task>
     <servers />
   </component>
@@ -88,5 +85,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
