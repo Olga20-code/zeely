@@ -15,8 +15,15 @@
 
   .team {
      .grid-small {
-       grid-column-gap: 90px;
+       grid-column-gap: 50px;
      }
+
+    .item {
+      .text {
+        width: 100%;
+        left: 15px;
+      }
+    }
   }
 
   footer {
@@ -41,6 +48,12 @@
       grid-template-columns: 1fr 1fr;
     }
   }
+
+  .team {
+    .grid-small {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -61,12 +74,12 @@
       max-width: 100%;
     }
     .list.grid-small {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 33% 30% 33%;
+      grid-gap: 5px;
     }
 
     .text {
       .contact {
-        flex-direction: column;
       }
 
       .description {
@@ -232,6 +245,36 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .card-main {
+    .text {
+      .description {
+        .grid {
+          grid-template-columns: 135px 1fr;
+        }
+      }
+    }
+  }
+
+  .request {
+    .grid-big {
+      grid-template-columns: 50% 50%;
+
+      .btn{
+        margin-left: 0;
+      }
+    }
+  }
+
+  .team {
+    .item {
+      .text {
+        left: 15px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 700px) {
   .card-main {
     .text {
@@ -256,10 +299,26 @@
     }
   }
 
+  .product {
+    .item {
+      .text {
+        .pattern {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+
   .about {
     .grid {
       grid-template-columns: 1fr;
       padding: 0 25px;
+    }
+
+    .aboutText {
+      .flex {
+        max-width: 250px;
+      }
     }
 
     .rating {
@@ -301,9 +360,62 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 570px) {
   .card-main {
+    .gallery-min {
+      grid-template-columns: 1fr;
+    }
 
+    .text {
+      .contact.flex-middle {
+        flex-direction: column;
+      }
+
+      .description {
+        .grid {
+          grid-template-columns: 1fr;
+          grid-gap: 15px;
+        }
+        .coupon {
+          background-size: cover!important;
+          background-position-x: -270px!important;
+
+          .coup-text {
+            transform: rotate(0deg);
+            display: flex;
+            align-items: center;
+            margin-left: 0;
+
+            img {
+              max-width: 150px;
+            }
+
+            h5 {
+              br {
+                display: none;
+              }
+            }
+          }
+
+          .sale {
+            h4 {
+              font-size: 18px;
+              span {
+                font-size: 14px;
+              }
+            }
+            .grid {
+              grid-template-columns: 1fr!important;
+
+              input:not([type=submit]), select,
+              .btn {
+                height: 55px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   .product {
@@ -316,7 +428,7 @@
 
   .request {
     .grid-big {
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 1fr;
     }
 
     .text {
@@ -325,8 +437,8 @@
   }
 
   .about {
-    .flex {
-      flex-direction: column;
+    .grid {
+      padding: 0;
     }
 
     .rating {
@@ -335,12 +447,33 @@
           flex-direction: row;
         }
       }
+
+      .confirm.grid {
+        grid-template-columns: 1fr;
+      }
+
+      .confirm.flex {
+        div {
+          margin-bottom: 10px;
+        }
+
+        .pic {
+          max-width: 25px;
+        }
+      }
     }
   }
 
   .team {
     .grid-small {
       grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .item {
+      .text {
+        left: 15px;
+      }
     }
   }
 
@@ -351,8 +484,6 @@
     }
 
     .item {
-      margin: 0 30px;
-
       .flex {
         padding-top: 30px;
         position: relative;
@@ -371,6 +502,72 @@
 
   .advantages {
     .grid-small {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  footer {
+    .text {
+      min-width: 0;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        margin: 10px 0px;
+      }
+    }
+
+    .logo.grid {
+      grid-template-columns: 35% 65%;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .card-main {
+    .text {
+      .description {
+        .coupon {
+          .coup-text {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+          }
+        }
+      }
+    }
+    .list.grid-small {
+      grid-template-columns: 1fr;
+
+      .flex {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  .specialOffer {
+    input {
+      padding: 25px 33px;
+    }
+
+    .btn {
+      min-height: 55px;
+    }
+  }
+
+  footer {
+    .logo.grid {
+      grid-template-columns: 65%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    .logo.grid {
       grid-template-columns: 1fr;
     }
   }

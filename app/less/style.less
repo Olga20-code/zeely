@@ -339,11 +339,15 @@ header {
 				}
 			}
 		}
+
+		.flex {
+			justify-content: flex-start;
+		}
 	}
 
 	.list.grid-small {
 		margin-top: 25px;
-		grid-template-columns: 215px 160px 215px;
+		grid-template-columns:  200px 145px 210px;
 		grid-gap: 50px;
 	}
 }
@@ -423,6 +427,10 @@ header {
 	.grid-big {
 		grid-template-columns: 25% 25% 25% 22%;
 		grid-gap: 10px;
+
+		&>* {
+			min-height: 65px;
+		}
 	}
 
 	.text {
@@ -461,7 +469,9 @@ header {
 		.btn {
 			border-radius: 5px;
 			color: @blue;
+			font-size: 16px;
 			font-family: 'proxima_novabold', sans-serif;
+			margin-left: 15px;
 		}
 	}
 
@@ -477,6 +487,10 @@ header {
 	.aboutText  {
 		img {
 			max-width: 127px;
+		}
+
+		.flex {
+			max-width: 280px;
 		}
 	}
 
@@ -525,7 +539,9 @@ header {
 		color: @black;
 		font-size: 16px;
 		line-height: 20px;
-		font-family: 'proxima_novabold', sans-serif;
+		font-family: 'proxima_novaregular', sans-serif;
+		font-weight: bold;
+		margin-bottom: 10px;
 	}
 
 	p {
@@ -536,6 +552,10 @@ header {
 	.rait {
 		h2 {
 			margin-bottom: 0;
+		}
+
+		p {
+			max-width: 268px;
 		}
 	}
 	
@@ -567,7 +587,24 @@ header {
 					object-fit: contain;
 				}
 			}
+
+			p {
+				line-height: 20px;
+			}
 		}
+	}
+
+	.confirm.grid {
+		grid-template-columns: 50% 50%;
+		grid-gap: 10px;
+
+		.pic {
+			min-width: 25px;
+		}
+	}
+
+	.rait.flex {
+		justify-content: flex-start;
 	}
 }
 
@@ -754,6 +791,10 @@ header {
 		border: 1px solid @green;
 		border-radius: 5px;
 		width: 100%;
+		min-height: 74px;
+		font-family: 'proxima_novaregular', sans-serif;
+		font-weight: bold;
+		line-height: 25px;
 	}
 	.picture-wrap{
 		position: relative;
@@ -902,6 +943,7 @@ footer {
 		border-radius: 5px;
 		padding: 13px 40px;
 		margin: 25px 0;
+		min-height: 78px;
 	}
 
 	.logo {
@@ -919,7 +961,7 @@ footer {
 	}
 
 	.logo.grid {
-		grid-template-columns: 32% 36%;
+		grid-template-columns: 32% 40%;
 		align-items: center;
 	}
 
@@ -971,6 +1013,7 @@ footer {
 		}
 	}
 }
+
 @media screen and (max-width: 960px){
 	.specialOffer{
 		.grid{
