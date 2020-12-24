@@ -445,9 +445,31 @@
           </div>
           
           <div class="item add">
-            <button>
-              <img src="img/svg/plus.svg" alt="plus">
-            </button>
+            <a class="popup-form" href="#form"><img src="img/svg/plus.svg" alt="plus"></a>
+
+            <form id="form" class="block-reviews mfp-hide">
+              <h2>Оставить отзыв</h2>
+              <fieldset style="border:0;">
+                <ul>
+                  <li>
+                    <label for="name"></label>
+                    <input id="name" name="name" type="text" placeholder="Имя" required="">
+                  </li>
+
+                  <li>
+                    <label for="phone"></label>
+                    <input id="phone" name="phone" type="tel" placeholder="Номер телефона" required="">
+                  </li>
+
+                  <li>
+                    <label for="textarea"></label>
+                    <textarea id="textarea">Здесь вы можете оставить свой отзыв</textarea>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button class="btn">Отправить отзыв</button>
+            </form>
           </div>
         </div>
 

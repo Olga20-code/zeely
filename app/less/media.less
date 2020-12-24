@@ -276,6 +276,13 @@
 }
 
 @media screen and (max-width: 700px) {
+  .block-reviews {
+    button.mfp-close {
+      top: -50px;
+      margin-right: 0;
+    }
+  }
+
   .card-main {
     .text {
       .description {
@@ -362,13 +369,17 @@
 
 @media screen and (max-width: 570px) {
   .card-main {
-    .gallery-min {
-      grid-template-columns: 1fr;
+    .popup-gallery {
+      a {
+        img {
+          min-height: 50px;
+        }
+      }
     }
 
     .text {
-      .contact.flex-middle {
-        flex-direction: column;
+      .contact {
+        display: none;
       }
 
       .description {
@@ -377,42 +388,58 @@
           grid-gap: 15px;
         }
         .coupon {
-          background-size: cover!important;
-          background-position-x: -270px!important;
+          background: #fff!important;
+          box-shadow: 0px 0px 21px -1px #c8c8c8;
 
           .coup-text {
-            transform: rotate(0deg);
-            display: flex;
-            align-items: center;
-            margin-left: 0;
-
-            img {
-              max-width: 150px;
-            }
-
-            h5 {
-              br {
-                display: none;
-              }
-            }
+            display: none;
           }
 
           .sale {
             h4 {
-              font-size: 18px;
+              font-size: 25px;
+              color: black;
+              text-align: center;
+              
               span {
-                font-size: 14px;
+                font-size: 18px;
               }
             }
             .grid {
               grid-template-columns: 1fr!important;
+
+              input {
+                border: 1px solid #000;
+              }
+
+              .btn {
+                border: 1px solid #000;
+                width: 100%;
+              }
 
               input:not([type=submit]), select,
               .btn {
                 height: 55px;
               }
             }
+
+            .stay {
+              h6, p {
+                color: #000;
+              }
+            }
           }
+        }
+
+        h2 {
+          padding-top: 0;
+          font-size: 17px;
+          line-height: 25px;
+        }
+
+        p {
+          font-size: 16px;
+          padding: 15px 0 30px;
         }
       }
     }
@@ -528,17 +555,6 @@
 
 @media screen and (max-width: 460px) {
   .card-main {
-    .text {
-      .description {
-        .coupon {
-          .coup-text {
-            display: flex;
-            flex-direction: column;
-            align-items: baseline;
-          }
-        }
-      }
-    }
     .list.grid-small {
       grid-template-columns: 1fr;
 
