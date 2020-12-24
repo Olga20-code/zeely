@@ -2,20 +2,20 @@
 @import url(./mixin.less);
 
 @font-face {
-	font-family: 'proxima_novabold';
-	src: url('../fonts/ProximaNovaRg.woff2') format('woff2'),
-			 url('../fonts/ProximaNovaRg.woff') format('woff'),
-			 url('../fonts/ProximaNovaRg.ttf') format('truetype');
+	font-family: 'proxima_novaregular';
+	src: url('../fonts/proxima_nova_regular.woff2') format('woff2'),
+			 url('../fonts/proxima_nova_regular.woff') format('woff'),
+			 url('../fonts/proxima_nova_regular.ttf') format('truetype');
 			 font-weight: normal;
 			 font-style: normal;
 
 }
 
 @font-face {
-	font-family: 'proxima_novaregular';
-	src: url('../fonts/ProximaNovaBold.woff2') format('woff2'),
-			 url('../fonts/ProximaNovaBold.woff') format('woff'),
-			 url('../fonts/ProximaNovaBold.ttf') format('truetype');
+	font-family: 'proxima_novabold';
+	src: url('../fonts/proxima_nova_bold.woff2') format('woff2'),
+			 url('../fonts/proxima_nova_bold.woff') format('woff'),
+			 url('../fonts/proxima_nova_bold.ttf') format('truetype');
 			 font-weight: normal;
 			 font-style: normal;
 
@@ -326,8 +326,6 @@ header {
 					h4 {
 						color: @white;
 						letter-spacing: .5px;
-						font-family: 'proxima_novaregular', sans-serif;
-						font-weight: bold;
 
 						span {
 							font-size: 20px;
@@ -979,6 +977,7 @@ footer {
 		line-height: 32px;
 		font-family: 'proxima_novaregular', sans-serif;
 		color: @white;
+		font-weight: 100;
 	}
 
 	.btn {
@@ -988,15 +987,11 @@ footer {
 		font-family: 'proxima_novabold', sans-serif;
 		border-radius: 5px;
 		padding: 13px 40px;
-		margin: 25px 0;
+		margin: 23px 0 51px;
 		min-height: 78px;
 	}
 
 	.logo {
-		img {
-			width: 205px;
-		}
-
 		p {
 			font-size: 14px;
 			line-height: 18px;
@@ -1007,13 +1002,14 @@ footer {
 	}
 
 	.logo.grid {
-		grid-template-columns: 32% 40%;
+		grid-template-columns: 33% 40%;
 		align-items: center;
+		margin-left: 4px;
 	}
 
 	.menu {
 		display: flex;
-		margin-top: 20px;
+		margin-top: 11px;
 
 		a {
 			font-size: 16px;
