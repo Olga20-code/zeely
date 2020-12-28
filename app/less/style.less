@@ -110,6 +110,7 @@ button.mfp-close {
 	height: 23px;
 	background-size: contain;
 	margin: 20px;
+  margin-top: 0;
 }
 
 button.mfp-arrow {
@@ -142,6 +143,14 @@ button.mfp-arrow {
 	background: @white;
 	padding: 30px;
 
+  h3 {
+    font-size: 36px;
+    font-family: 'proxima_novabold', sans-serif;
+    line-height: 40px;
+    color: @black;
+    font-weight: bold;
+  }
+
 	.btn {
 		color: @blue;
 		margin: 10px 0;
@@ -156,10 +165,13 @@ button.mfp-arrow {
 
 	textarea {
 		min-height: 150px!important;
-	}
+    font-family: proxima_novaregular,sans-serif;
+  }
+
 
 	input,
 	textarea{
+    font-size: 13px;
 		appearance: none;
 		border-radius: 5px;
 		border: 1px solid @black;
@@ -174,6 +186,10 @@ button.mfp-arrow {
 		padding: 0 15px;
 		font-size: 13px;
 	}
+
+  .mfp-close {
+    right: 22%;
+  }
 }
 
 header {
@@ -315,21 +331,26 @@ header {
             max-width: 100px;
           }
 
-          h5 {
-            color: @white;
-						padding: 10px;
+          .h5 {
+						padding: 15px 0;
           }
         }
 
 				.sale {
 					width: 100%;
-					h4 {
+
+					p.h4 {
+						font-size: 28px;
+						line-height: 28px;
+						font-family: 'proxima_novabold', sans-serif;
 						color: @white;
 						letter-spacing: .5px;
+						padding: 0;
 
 						span {
 							font-size: 20px;
 						}
+
 					}
 
 					form {
@@ -417,8 +438,11 @@ header {
 			font-family: 'proxima_novaregular', sans-serif;
 		}
 
-		h4 {
+		.h4 {
 			font-size: 18px;
+			line-height: 28px;
+			font-family: proxima_novabold,sans-serif;
+			font-weight: 400;
 		}
 
 		.flex {
@@ -481,8 +505,12 @@ header {
 		padding: 40px 25px;
 		padding-bottom: 49px;
 
-		h2 {
+		h3 {
+			font-size: 36px;
+			font-family: 'proxima_novabold', sans-serif;
+			line-height: 40px;
 			color: @white;
+			font-weight: bold;
 		}
 
 		p {
@@ -525,6 +553,18 @@ header {
 		align-items: baseline;
 	}
 
+	.aboutText,
+	.rating {
+		h3 {
+			font-size: 36px;
+			font-family: 'proxima_novabold', sans-serif;
+			line-height: 40px;
+			color: @black;
+			font-weight: bold;
+			margin-bottom: 29px;
+		}
+	}
+
 	.aboutText  {
 		img {
 			max-width: 127px;
@@ -539,10 +579,6 @@ header {
 		.flex {
 			margin-bottom: 33px;
 		}
-	}
-
-	h2 {
-		margin-bottom: 29px;
 	}
 
 	p {
@@ -572,17 +608,23 @@ header {
 		}
 	}
 
-	h5 {
+	.h5 {
+		color: @black;
+		font-size: 20px!important;
+		line-height: 20px;
+		font-family: 'proxima_novabold', sans-serif;
+		margin-bottom: 10px;
 		font-weight: 600;
+		padding: 0;
 	}
 
-	h6 {
+	.h6 {
 		color: @black;
-		font-size: 16px;
+		font-size: 16px!important;
 		line-height: 20px;
-		font-family: 'proxima_novaregular', sans-serif;
-		font-weight: bold;
+		font-family: 'proxima_novabold', sans-serif;
 		margin-bottom: 10px;
+		font-weight: 600;
 	}
 
 	p {
@@ -591,8 +633,9 @@ header {
 	}
 
 	.rait {
-		h2 {
+		.special {
 			margin-bottom: 0;
+			font-size: 36px;
 		}
 
 		p {
@@ -610,6 +653,10 @@ header {
 		justify-content: center;
 		align-items: center;
 		color: @white;
+
+		font-family: 'proxima_novabold', sans-serif;
+		line-height: 40px;
+		font-weight: bold;
 	}
 
 	.confirm {
@@ -649,6 +696,24 @@ header {
 	}
 }
 
+.choose {
+  margin: 50px 0;
+  h3 {
+    font-size: 36px;
+    font-family: 'proxima_novabold', sans-serif;
+    line-height: 40px;
+    color: @black;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: proxima_novaregular,sans-serif;
+    &+p {
+      padding: 15px 0;
+    }
+  }
+}
+
 .reviews {
 	padding: 7px 0;
 
@@ -657,6 +722,14 @@ header {
 		grid-gap: 12px;
 		grid-column-gap: 27px;
 	}
+
+  h3 {
+    font-size: 36px;
+    font-family: 'proxima_novabold', sans-serif;
+    line-height: 40px;
+    color: @black;
+    font-weight: bold;
+  }
 
 	.item-video {
 		background: none!important;
@@ -696,10 +769,12 @@ header {
 			}
 		}
 
-		h6 {
-			font-size: 16px;
-			color: @black;
-		}
+    .h6 {
+      font-size: 16px;
+      color: @black;
+      line-height: 23px;
+      font-weight: 600;
+    }
 	}
 
 	.add {
@@ -755,10 +830,18 @@ header {
 		margin-top: 41px;
 	}
 
+  .h3 {
+    font-size: 36px;
+    font-family: 'proxima_novabold', sans-serif;
+    line-height: 40px;
+    color: @black;
+    font-weight: bold;
+  }
+
 	.list {
 		display: flex;
 
-		h6 {
+		.h6 {
 			font-size: 18px;
 			line-height: 18px;
 			font-family: 'proxima_novabold', sans-serif;
@@ -802,17 +885,19 @@ header {
 		border-radius: 5px;
 	}
 
-	h6 {
+	.h6 {
 		color: #7002FE;
 		font-size: 22px;
 		line-height: 40px;
+    padding-bottom: 0;
 	}
 
-	h4 {
+	.h4 {
 		font-size: 25px;
 		line-height: 33px;
 		padding: 10px 0;
 		padding-bottom: 5px;
+    font-family: 'proxima_novabold', sans-serif;
 	}
 
 	p {
@@ -902,6 +987,14 @@ header {
 		margin-top: 48px;
 	}
 
+  .h4 {
+    font-size: 36px;
+    font-family: 'proxima_novabold', sans-serif;
+    line-height: 40px;
+    color: @black;
+    font-weight: bold;
+  }
+
 	.item {
 		position: relative;
 		max-width: 300px;
@@ -911,10 +1004,12 @@ header {
 			border-radius: 5px;
 		}
 
-		h5 {
+		.h5 {
 			font-size: 14px;
 			font-family: 'proxima_novabold', sans-serif;
 			line-height: 20px;
+      color: @black;
+      padding: 0;
 		}
 
 		p {
@@ -970,6 +1065,14 @@ footer {
 		font-size: 45px;
 		line-height: 50px;
 	}
+
+  h5 {
+    font-family: 'proxima_novabold', sans-serif;
+    color: @white;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+  }
 
 	p {
 		padding-top: 6px;
