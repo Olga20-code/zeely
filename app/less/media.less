@@ -14,9 +14,9 @@
   }
 
   .team {
-     .grid-small {
-       grid-column-gap: 50px;
-     }
+    .grid-small {
+      grid-column-gap: 50px;
+    }
 
     .item {
       .text {
@@ -78,13 +78,50 @@
       grid-gap: 5px;
     }
 
+    .contact-special {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 40px;
+
+      .image {
+        max-width: 127px;
+      }
+
+      .address,
+      .phone {
+        img {
+          width: 58px;
+          height: 58px;
+          min-width: 58px;
+          background: #FCFCFC;
+          padding: 8px 16px;
+          border-radius: 5px;
+        }
+        a{
+          color: #000;
+          line-height: 1.4;
+        }
+      }
+    }
+
     .text {
       .contact {
+        display: none;
       }
 
       .description {
+        h1.h2 {
+          padding-top: 0;
+          font-size: 36px;
+          max-width: 460px;
+          line-height: 1.25;
+        }
+        p {
+          max-width: 490px;
+          padding: 10px 0 45px;
+        }
         .grid {
-          grid-template-columns: 118px 1fr;
+          grid-template-columns: 96px 400px;
         }
 
         .coupon {
@@ -293,6 +330,11 @@
       }
     }
 
+    .contact-special {
+      grid-template-columns: 130px 1fr 1fr;
+      grid-gap: 15px;
+    }
+
     .list.grid-small {
       grid-template-columns: 210px 150px;
       grid-gap: 20px;
@@ -381,32 +423,55 @@
           grid-gap: 15px;
         }
         .coupon {
-          background: #fff!important;
-          box-shadow: 0px 0px 21px -1px #c8c8c8;
+          position: relative;
+          background: none!important;
+          max-width: 323px;
+          margin: 0 auto;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("../img/svg/top.svg") no-repeat;
+            z-index: -1;
+          }
 
           .coup-text {
-            display: none;
+            transform: none;
+            margin-left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .h5 {
+              br {
+                display: none;
+              }
+            }
           }
 
           .sale {
+            padding-bottom: 25px;
             p.h4 {
               font-size: 25px;
-              color: black;
-              text-align: center;
-              
+              color: #fff;
+
               span {
-                font-size: 18px;
+                font-size: 17px;
               }
             }
             .grid {
               grid-template-columns: 1fr!important;
 
               input {
-                border: 1px solid #000;
+                border: 1px solid #fff;
               }
 
               .btn {
-                border: 1px solid #000;
+                border: 1px solid #fff;
                 width: 100%;
               }
 
@@ -417,8 +482,13 @@
             }
 
             .stay {
-              h6, p {
-                color: #000;
+              p {
+                color: #fff;
+                opacity: .7;
+              }
+
+              .h6 {
+                color: #fff;
               }
             }
           }
@@ -426,13 +496,37 @@
 
         h2 {
           padding-top: 0;
-          font-size: 22px;
+          font-size: 26px;
           line-height: 30px;
         }
 
         p {
-          font-size: 21px;
+          font-size: 18px;
           padding: 15px 0 30px;
+        }
+      }
+    }
+
+    .contact-special {
+      grid-template-columns: 100px 1fr;
+      grid-gap: 15px;
+      .address {
+        display: none;
+      }
+      .image {
+        max-width: 100px;
+      }
+    }
+
+    .list {
+      .item {
+        p {
+          font-size: 14px;
+        }
+
+        img {
+          max-width: 40px;
+          max-height: 40px;
         }
       }
     }
@@ -562,8 +656,6 @@
 @media screen and (max-width: 460px) {
   .card-main {
     .list.grid-small {
-      grid-template-columns: 1fr;
-
       .flex {
         justify-content: flex-start;
       }
@@ -588,6 +680,12 @@
 }
 
 @media screen and (max-width: 400px) {
+  .card-main {
+    .list.grid-small {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
   footer {
     .logo.grid {
       grid-template-columns: 1fr;
