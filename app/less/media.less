@@ -61,8 +61,8 @@
     max-width: 750px;
   }
 
-  h2 {
-    font-size: 30px;
+  h2, .h3 {
+    font-size: 36px;
   }
 
   .card-main {
@@ -149,8 +149,14 @@
         font-size: 27px;
       }
 
+      h3 {
+        max-width: 100%;
+      }
+
       .btn {
-        font-size: 12px;
+        font-size: 13px;
+        font-family: proxima_novaregular,sans-serif;
+        font-weight: 600;
       }
     }
   }
@@ -159,24 +165,29 @@
     h6 {
       font-size: 13px;
     }
+
     .grid {
-      grid-template-columns: 44% 66%;
-      grid-gap: 50px;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
     }
 
-    .special {
-      width: 60px;
-      height: 60px;
+    .rait {
+      .special {
+        width: 70px;
+        height: 70px;
+        font-size: 30px!important;
+      }
     }
 
     .aboutText {
+      max-width: 500px;
       img {
         max-width: 100px;
       }
     }
 
     .rating {
-      max-width: 318px;
+      max-width: 560px;
 
       .confirm.flex {
         div {
@@ -215,16 +226,32 @@
     }
   }
 
+  .specialOffer {
+    .h4 {
+      font-size: 22px;
+    }
+  }
+
   .team {
     .grid-small {
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 10px;
+      grid-row-gap: 30px;
+    }
+
+    .h4 {
+      font-size: 30px;
     }
   }
 
   footer {
     padding: 40px 0;
     padding-bottom: 0;
+
+    h5 {
+      line-height: 1.25;
+      font-size: 36px;
+    }
 
     .grid {
       grid-template-columns: 68% 32%;
@@ -276,7 +303,8 @@
     }
 
     p {
-      font-size: 22px;
+      font-size: 18px;
+      line-height: 1.4;
       max-width: 460px;
     }
   }
@@ -289,7 +317,20 @@
         .grid {
           grid-template-columns: 135px 1fr;
         }
+
+        .coupon {
+          .coup-text {
+            margin-left: 0;
+          }
+        }
       }
+    }
+  }
+
+  .product {
+    .grid-big {
+      margin: 40px;
+      margin-left: 0;
     }
   }
 
@@ -299,6 +340,12 @@
 
       .btn{
         margin-left: 0;
+      }
+    }
+
+    .text {
+      h3 {
+        font-size: 30px;
       }
     }
   }
@@ -351,20 +398,28 @@
     }
   }
 
+  .request {
+    .text {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
   .about {
     .grid {
       grid-template-columns: 1fr;
       padding: 0 25px;
     }
 
-    .aboutText {
-      .flex {
-        max-width: 250px;
-      }
-    }
-
     .rating {
       max-width: 100%;
+    }
+  }
+
+  .team {
+    .h2 {
+      font-size: 30px!important;
     }
   }
 
@@ -381,28 +436,60 @@
       position: relative;
     }
 
+    .logo.grid {
+      grid-template-columns: 230px;
+    }
+
     .menu {
       position: relative;
       bottom: 0;
+      display: flex;
+      flex-direction: initial;
+      flex-flow: wrap;
+
+      li:nth-child(1) {
+        order: 1;
+      }
+
+      li:nth-child(2) {
+        order: 3;
+      }
+
+      li:nth-child(3) {
+        order: 2;
+      }
     }
 
     .image {
+      height: 100%;
+
       .phone {
-        width: 100%;
-        &:after {
-          bottom: -5vw;
-          left: 25%;
-        }
+        display: none;
       }
 
       .social {
-        bottom: 5vw;
+        bottom: 20vw;
+        left: 77vw;
       }
     }
   }
 }
 
 @media screen and (max-width: 570px) {
+  h1.h2 {
+    font-size: 26px!important;
+    font-family: 'proxima_novabold', sans-serif;
+  }
+  .h2 {
+    font-size: 26px!important;
+  }
+  h2, .h3, h3 {
+    font-size: 26px!important;
+  }
+
+  .h4 {
+    font-size: 22px!important;
+  }
   .card-main {
     .popup-gallery {
       a {
@@ -547,6 +634,10 @@
 
     .text {
       background: linear-gradient(94.22deg,#7002fe -.29%,#3459a2 49.14%);
+
+      h3 {
+        font-size: 22px!important;
+      }
     }
   }
 
@@ -557,6 +648,23 @@
   }
 
   .about {
+    .h5 {
+      font-size: 16px!important;
+      margin-bottom: 0;
+    }
+
+    .flex {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .aboutText {
+      img {
+        max-width: 120px;
+      }
+    }
+
     .grid {
       padding: 0;
     }
@@ -573,7 +681,7 @@
       }
 
       .pic {
-        min-width: 60px!important;
+        min-width: 25px!important;
         display: flex;
         justify-content: center;
         margin-right: 10px;
@@ -611,8 +719,10 @@
     }
 
     .item {
+      min-height: 165px;
+      padding: 20px 22px 0;
       .flex {
-        padding-top: 30px;
+        padding: 30px 0;
         position: relative;
         bottom: 0;
         left: 0;
@@ -634,21 +744,17 @@
   }
 
   footer {
+    h5 {
+      font-size: 30px;
+    }
     .text {
       min-width: 0;
     }
 
     .menu {
-      display: flex;
-      flex-direction: column;
-
       a {
         margin: 10px 0px;
       }
-    }
-
-    .logo.grid {
-      grid-template-columns: 35% 65%;
     }
   }
 }
@@ -671,24 +777,20 @@
       min-height: 55px;
     }
   }
-
-  footer {
-    .logo.grid {
-      grid-template-columns: 65%;
-    }
-  }
 }
 
 @media screen and (max-width: 400px) {
   .card-main {
     .list.grid-small {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
     }
   }
 
   footer {
-    .logo.grid {
-      grid-template-columns: 1fr;
+    .image {
+      .social {
+        bottom: 85px;
+      }
     }
   }
 }

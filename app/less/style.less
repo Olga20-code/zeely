@@ -137,6 +137,14 @@ button.mfp-arrow {
 	}
 }
 
+.h3 {
+	font-size: 36px;
+	font-family: proxima_novabold,sans-serif;
+	line-height: 40px;
+	color: #000;
+	font-weight: 700;
+}
+
 .block-reviews {
 	max-width: 500px;
 	margin: 0 auto;
@@ -260,10 +268,21 @@ header {
 			display: none;
 		}
 	}
+
+  .main-gallery {
+    img {
+      border-radius: 5px;
+    }
+  }
+
 	.gallery-min{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 10px;
+
+    img {
+      border-radius: 5px;
+    }
 	}
 
 	.contact-special {
@@ -351,6 +370,7 @@ header {
 
 					.h5 {
 						padding: 15px 0;
+						font-weight: 600;
 					}
 				}
 
@@ -529,9 +549,10 @@ header {
 		h3 {
 			font-size: 36px;
 			font-family: 'proxima_novabold', sans-serif;
-			line-height: 40px;
+			line-height: 1.25;
 			color: @white;
 			font-weight: bold;
+      max-width: 690px;
 		}
 
 		p {
@@ -621,7 +642,7 @@ header {
 		}
 
 		p {
-			font-size: 14px;
+			font-size: 16px;
 		}
 
 		p+p {
@@ -649,8 +670,8 @@ header {
 	}
 
 	p {
-		font-size: 12px;
-		line-height: 17px;
+		font-size: 16px;
+		line-height: 1.4;
 	}
 
 	.rait {
@@ -689,7 +710,7 @@ header {
 			}
 
 			.pic {
-				width: 55px;
+				width: 35px;
 				height: 25px;
 
 				img {
@@ -729,6 +750,8 @@ header {
 	}
 	p {
 		font-family: proxima_novaregular,sans-serif;
+    font-size: 16px;
+		line-height: 1.4;
 		&+p {
 			padding: 15px 0;
 		}
@@ -761,6 +784,7 @@ header {
 		padding: 20px 22px;
 		background: #f3f3f3;
 		position: relative;
+    min-height: 242px;
 
 		iframe {
 			border-radius: 5px;
@@ -864,9 +888,10 @@ header {
 
 		.h6 {
 			font-size: 18px;
-			line-height: 18px;
+			line-height: 1.4;
 			font-family: 'proxima_novabold', sans-serif;
 			color: @black;
+			margin-top: 0;
 		}
 
 		.image {
@@ -885,7 +910,7 @@ header {
 		p {
 			font-size: 16px;
 			font-family: 'proxima_novaregular', sans-serif;
-			margin-top: 10px;
+			line-height: 1.4;
 		}
 	}
 }
