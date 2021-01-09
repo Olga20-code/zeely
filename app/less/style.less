@@ -20,6 +20,20 @@
 	font-style: normal;
 
 }
+@font-face {
+	font-family: 'proxima_semibold';
+	src: url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+	url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+.font-6{
+	font-family: 'proxima_semibold', sans-serif;
+}
+.font-7{
+	font-family: 'proxima_novabold', sans-serif;
+}
 
 .btn{
 	padding: 0 30px;
@@ -209,21 +223,22 @@ button.mfp-arrow {
 }
 
 header {
-	padding: 30px 0;
+	padding: 43px 0;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 
 	.logo {
-		max-width: 240px;
+		max-width: 266px;
 	}
-
 	.login {
 		margin-right: 5px;
-		margin-bottom: 10px;
 
 		.btn {
 			color: @green;
-			padding: 17px 37px;
-			font-size: 16px;
+			padding: 15px;
+			font-size: 18px;
+			height: 65px;
+			line-height: 65px;
+			width: 186px;
 		}
 
 		.registration {
@@ -241,7 +256,7 @@ header {
 
 	.grid {
 		align-items: flex-start;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: .87fr 1fr;
 		grid-gap: 30px;
 	}
 
@@ -270,8 +285,19 @@ header {
 	}
 
   .main-gallery {
+	  position: relative;
+	  padding-top: 66%;
+	  margin-bottom: 8px;
+
     img {
+	  display: block;
       border-radius: 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
     }
   }
 
@@ -291,41 +317,37 @@ header {
 
 	.text {
 		.contact {
+			margin-bottom: 49px;
+
 			.image {
-				max-width: 127px;
+				max-width: 126px;
+				display: block;
 			}
 
 			.address,
 			.phone {
-				img {
-					width: 58px;
-					height: 58px;
-					min-width: 58px;
-					background: @grey;
-					padding: 8px 16px;
-					border-radius: 5px;
-				}
-				a{
-					color: #000;
-					line-height: 1.4;
-				}
-			}
-
-			.phone {
-				min-width: 215px;
-				a {
-					color: @black;
-					line-height: 20px;
-				}
-			}
-
-			.address {
-				min-width: 215px;
-
-				p {
+				&, a{
 					font-size: 14px;
 					line-height: 18px;
+					color: #000;
 				}
+
+				.icon {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: @grey;
+					object-fit: contain;
+					width: 58px;
+					height: 58px;
+					border-radius: 5px;
+				}
+			}
+			.address img{
+				max-width: 26px;
+			}
+			.phone img{
+				max-width: 34px;
 			}
 
 			.icon {
@@ -338,11 +360,10 @@ header {
 				font-size: 20px;
 				line-height: 24px;
 				font-family: 'proxima_novaregular', sans-serif;
-				padding: 15px 0px 67px 0px;
+				padding: 12px 0px 67px 0px;
 			}
 
 			h1.h2 {
-				padding-top: 45px;
 				font-weight: bold;
 				font-size: 36px;
 			}
@@ -414,7 +435,7 @@ header {
 						p {
 							color: #C8C8C8;
 							font-size: 10px;
-							line-height: 23px;
+							line-height: 13px;
 							padding: 0;
 						}
 					}
@@ -424,7 +445,18 @@ header {
 	}
 
 	.list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-top: 28px;
+
 		.item {
+			& + .item{
+				margin-left: 73px;
+			}
+			.text{
+				min-width: 92px;
+			}
 			img {
 				background: @light-grey;
 				padding: 10px;
@@ -467,6 +499,7 @@ header {
 
 		img {
 			border-radius: 5px;
+			display: block;
 		}
 
 		.text {
@@ -481,22 +514,21 @@ header {
 
 		.h4 {
 			font-size: 18px;
-			line-height: 28px;
+			line-height: 25px;
 			font-family: proxima_novabold,sans-serif;
 			font-weight: 400;
-		}
-
-		.flex {
-			&>* {
-				margin: 15px;
-			}
-
-			div:first-child {
-				margin-left: 0;
-			}
+			margin-bottom: 7px;
 		}
 
 		.pattern {
+			justify-content: initial;
+			display: flex;
+			margin-bottom: 17px;
+
+			& > *{
+				margin-bottom: 15px;
+				margin-right: 22px;
+			}
 			p {
 				font-size: 14px;
 				line-height: 18px;
@@ -528,8 +560,11 @@ header {
 }
 
 .request {
-	margin: 50px 0;
+	margin: 46px 0 50px;
 
+	input, select{
+		padding: 0 45px;
+	}
 	.grid-big {
 		grid-template-columns: 25% 25% 25% 22%;
 		grid-gap: 10px;
@@ -583,6 +618,8 @@ header {
 			font-size: 16px;
 			font-family: 'proxima_novabold', sans-serif;
 			margin-left: 15px;
+			White-space: nowrap;
+			padding: 0;
 		}
 	}
 
@@ -603,7 +640,12 @@ header {
 			line-height: 40px;
 			color: @black;
 			font-weight: bold;
-			margin-bottom: 29px;
+			margin-bottom: 27px;
+		}
+	}
+	.text{
+		p + p{
+			margin-top: 13px;
 		}
 	}
 
@@ -611,10 +653,19 @@ header {
 		img {
 			max-width: 127px;
 		}
+	}
 
-		.flex {
-			max-width: 280px;
+	.info{
+		display: flex;
+		align-items: center;
+		margin-bottom: 27px;
+
+		p{
+			font-size: 14px;
 		}
+	}
+	.left{
+		margin-right: 19px;
 	}
 
 	.rating {
@@ -626,36 +677,13 @@ header {
 	p {
 		font-family: 'proxima_novaregular', sans-serif;
 	}
-	p+p {
-		padding: 15px 0;
-	}
-
-	.flex {
-		margin-bottom: 30px;
-
-		&>* {
-			margin: 0 10px;
-		}
-
-		div:first-child {
-			margin-left: 0;
-		}
-
-		p {
-			font-size: 16px;
-		}
-
-		p+p {
-			padding: 0;
-		}
-	}
 
 	.h5 {
 		color: @black;
 		font-size: 20px!important;
 		line-height: 20px;
-		font-family: 'proxima_novabold', sans-serif;
-		margin-bottom: 10px;
+		.font-6;
+		margin-bottom: 3px;
 		font-weight: 600;
 		padding: 0;
 	}
@@ -664,9 +692,8 @@ header {
 		color: @black;
 		font-size: 16px!important;
 		line-height: 20px;
-		font-family: 'proxima_novabold', sans-serif;
-		margin-bottom: 10px;
-		font-weight: 600;
+		margin-bottom: 6px;
+		.font-6;
 	}
 
 	p {
@@ -702,6 +729,8 @@ header {
 	}
 
 	.confirm {
+		margin-top: 37px;
+
 		.flex {
 			align-items: end;
 
@@ -710,8 +739,9 @@ header {
 			}
 
 			.pic {
-				width: 35px;
+				width: 25px;
 				height: 25px;
+				margin-right: 19px;
 
 				img {
 					object-fit: contain;
@@ -794,8 +824,7 @@ header {
 		}
 
 		p {
-			font-size: 13px;
-			line-height: 22px;
+			line-height: 1.55;
 			font-family: 'proxima_novaregular', sans-serif;
 		}
 
@@ -984,16 +1013,21 @@ header {
 				border: 5px solid #fff;
 				border-radius: 10px;
 				overflow: hidden;
+				height: 100%;
+				object-fit: cover;
+				width: 100%;
 			}
 		}
 		.picture-left{
 			width: 50%;
+			height: 58%;
 			left: 0;
 			bottom: 0;
 			z-index: 2;
 		}
 		.picture-right{
 			width: 65%;
+			height: 76%;
 			right: 0;
 			top: 0;
 		}
@@ -1038,7 +1072,6 @@ header {
 		font-family: 'proxima_novabold', sans-serif;
 		line-height: 40px;
 		color: @black;
-		font-weight: bold;
 	}
 
 	.item {

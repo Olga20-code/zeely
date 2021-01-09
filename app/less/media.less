@@ -1,3 +1,10 @@
+.font-6{
+  font-family: 'proxima_semibold', sans-serif;
+}
+.font-7{
+  font-family: 'proxima_novabold', sans-serif;
+}
+
 @media screen and (max-width: 1250px) {
   .advantages {
     .grid-small {
@@ -31,7 +38,7 @@
       .social {
         left: 0;
         right: 0;
-        bottom: 100px;
+        bottom: 70px;
 
         svg {
           width: 40px;
@@ -60,6 +67,21 @@
   .center {
     max-width: 750px;
   }
+  header {
+    padding: 26px 0;
+
+    .logo {
+      max-width: 199px;
+    }
+    .login{
+      .btn{
+        height: 55px;
+        line-height: 55px;
+        width: 180px;
+        font-size: 16px;
+      }
+    }
+  }
 
   h2, .h3 {
     font-size: 36px;
@@ -68,6 +90,25 @@
   .card-main {
     .grid {
       grid-template-columns: 1fr;
+    }
+    p, a{
+      .font-6;
+    }
+    .text .description .coupon .coup-text img{
+      margin-top: 25px;
+    }
+    .text .description .coupon .sale p.h4 span{
+      .font-7;
+    }
+    .list .item+.item{
+      margin-left: 4vw;
+    }
+
+    .text{
+     h2{
+       max-width: 460px;
+       line-height: 1.25;
+     }
     }
 
     .popup-gallery {
@@ -79,12 +120,24 @@
     }
 
     .contact-special {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 40px;
+      display: flex;
+      width: 100%;
+      font-size: 12px;
+      justify-content: flex-start;
+
+      & > *{
+        margin-right: 5vw;
+
+        &:last-child{
+          margin: 0;
+        }
+      }
 
       .image {
-        max-width: 127px;
+        max-width: 100px;
+      }
+      .icon{
+        margin-right: 10px;
       }
 
       .address,
@@ -135,8 +188,12 @@
 
   .product {
     .grid-big {
-      grid-template-columns: 50% 50%;
-      margin: 40px;
+      grid-template-columns: 1fr 1fr;
+      margin: 40px 0;
+    }
+    .item .asc a{
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -144,19 +201,30 @@
     .text {
       padding: 30px 25px;
       background-size: contain;
+      background-image: linear-gradient(94.22deg,#7002fe -.29%,#3459a2 49.14%);
 
       h2 {
         font-size: 27px;
       }
+      input, select{
+        padding: 0 15px;
+        font-size: 13px;
+        height: 60px;
+      }
+      .grid-big{
+        grid-template-columns: 23% 23% 23% 26%;
+      }
 
       h3 {
         max-width: 100%;
+        font-size: 30px;
       }
 
       .btn {
         font-size: 13px;
         font-family: proxima_novaregular,sans-serif;
         font-weight: 600;
+        margin-left: 0;
       }
     }
   }
@@ -164,6 +232,10 @@
   .about {
     h6 {
       font-size: 13px;
+    }
+    .h5{
+      font-size: 16px!important;
+      margin-bottom: 0px;
     }
 
     .grid {
@@ -180,10 +252,15 @@
     }
 
     .aboutText {
-      max-width: 500px;
+      max-width: 442px;
       img {
         max-width: 100px;
       }
+    }
+    .confirm .flex .pic{
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
     }
 
     .rating {
@@ -224,6 +301,9 @@
     .grid-small {
       grid-template-columns: 1fr 1fr;
     }
+    .list .h6{
+      .font-6;
+    }
   }
 
   .specialOffer {
@@ -251,6 +331,9 @@
     h5 {
       line-height: 1.25;
       font-size: 36px;
+    }
+    .logo p{
+      font-size: 12px;
     }
 
     .grid {
@@ -284,7 +367,7 @@
 
       .social {
         left: 0vw;
-        bottom: 12vw;
+        bottom: 120px;
       }
     }
 
@@ -296,6 +379,8 @@
     .btn {
       font-size: 15px;
       padding: 13px 30px;
+      height: 60px;
+      min-height: initial;
     }
 
     h2 {
@@ -329,8 +414,7 @@
 
   .product {
     .grid-big {
-      margin: 40px;
-      margin-left: 0;
+      margin: 40px 0;
     }
   }
 
@@ -375,11 +459,6 @@
           min-width: 0;
         }
       }
-    }
-
-    .contact-special {
-      grid-template-columns: 130px 1fr 1fr;
-      grid-gap: 15px;
     }
 
     .list.grid-small {
@@ -476,6 +555,38 @@
 }
 
 @media screen and (max-width: 570px) {
+  .list{
+    margin: 0 -2vw;
+
+    & > *{
+      margin: 0 2vw 2vw!important;
+    }
+  }
+  .h2, .h3, h1.h2, h2, h3{
+    line-height: 1.3!important;
+  }
+  .center{
+    max-width: 350px;
+    padding: 0 15px;
+  }
+  .card-main .text .description .coupon {
+    min-height: 373px;
+
+    .coup-text {
+      width: 100%;
+
+      .h5{
+        font-size: 16px;
+        line-height: 1.1;
+      }
+      img{
+        margin-top: 0;
+      }
+    }
+    .sale form{
+      margin-bottom: 22px;
+    }
+  }
   h1.h2 {
     font-size: 26px!important;
     font-family: 'proxima_novabold', sans-serif;
@@ -491,6 +602,9 @@
     font-size: 22px!important;
   }
   .card-main {
+    .list .item .text{
+      min-width: initial;
+    }
     .popup-gallery {
       a {
         img {
@@ -595,8 +709,7 @@
     }
 
     .contact-special {
-      grid-template-columns: 100px 1fr;
-      grid-gap: 15px;
+      justify-content: space-between;
       .address {
         display: none;
       }
@@ -625,18 +738,26 @@
       margin: 0;
       margin-top: 40px;
     }
+    .item .h4{
+      margin-bottom: 20px;
+    }
   }
 
   .request {
-    .grid-big {
-      grid-template-columns: 1fr;
-    }
+    margin-bottom: 38px;
 
+    .grid-big{
+      grid-gap: 20px;
+    }
     .text {
-      background: linear-gradient(94.22deg,#7002fe -.29%,#3459a2 49.14%);
+      background: linear-gradient(94.22deg,#3C4DAE -.29%,#355AA3 49.14%);
+      padding: 25px 10px;
 
       h3 {
         font-size: 22px!important;
+      }
+      .grid-big {
+        grid-template-columns: 1fr;
       }
     }
   }
@@ -652,6 +773,9 @@
       font-size: 16px!important;
       margin-bottom: 0;
     }
+    .info{
+      margin-bottom: 20px;
+    }
 
     .flex {
       p {
@@ -660,6 +784,11 @@
     }
 
     .aboutText {
+      h3{
+        font-size: 26px;
+        line-height: 1.3;
+        margin-bottom: 14px;
+      }
       img {
         max-width: 120px;
       }
@@ -728,6 +857,25 @@
         left: 0;
         width: 100%;
       }
+      &.item-video{
+        padding: 0;
+        position: relative;
+
+        .video{
+          padding-top: 60%;
+          position: relative;
+        }
+
+        iframe{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          object-fit: initial;
+        }
+      }
     }
 
     .list {
@@ -736,10 +884,42 @@
       }
     }
   }
+  .specialOffer {
+    .special {
+      padding: 20px 12px;
+    }
+    input{
+      font-size: 14px;
+      height: 65px;
+      padding: 0 15px;
+      margin: 0 0 10px;
+    }
+    .btn{
+      font-weight: 600;
+      font-size: 15px;
+      height: 65px;
+      padding: 0 15px;
+      min-height: initial;
+    }
+
+    .h6 {
+      font-size: 18px;
+      line-height: 1.55;
+      .font-7;
+    }
+    .h4{
+      padding-top: 0;
+      font-size: 22px;
+      line-height: 1.35;
+    }
+  }
 
   .advantages {
     .grid-small {
       grid-template-columns: 1fr;
+    }
+    .grid-small{
+      grid-gap: 15px;
     }
   }
 
@@ -756,41 +936,10 @@
         margin: 10px 0px;
       }
     }
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .card-main {
-    .list.grid-small {
-      .flex {
-        justify-content: flex-start;
-      }
-    }
-  }
-
-  .specialOffer {
-    input {
-      padding: 25px 33px;
-    }
-
-    .btn {
-      min-height: 55px;
-    }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .card-main {
-    .list.grid-small {
-      grid-template-columns: 50% 50%;
-    }
-  }
-
-  footer {
-    .image {
-      .social {
-        bottom: 85px;
-      }
+   .image .social {
+      bottom: 90px;
+      right: 0;
+      left: auto;
     }
   }
 }
