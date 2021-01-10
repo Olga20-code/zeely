@@ -68,7 +68,7 @@
     max-width: 750px;
   }
   header {
-    padding: 26px 0;
+    padding: 29px 0;
 
     .logo {
       max-width: 199px;
@@ -88,6 +88,8 @@
   }
 
   .card-main {
+    padding-top: 32px;
+
     .grid {
       grid-template-columns: 1fr;
     }
@@ -602,8 +604,13 @@
     font-size: 22px!important;
   }
   .card-main {
+    padding-bottom: 33px;
+
     .list .item .text{
       min-width: initial;
+    }
+    .h4 {
+      font-size: 24px!important;
     }
     .popup-gallery {
       a {
@@ -620,14 +627,14 @@
 
       .description {
         .grid {
-          grid-template-columns: 1fr;
-          grid-gap: 15px;
+          display: block;
         }
         .coupon {
           position: relative;
           background: none!important;
           max-width: 323px;
           margin: 0 auto;
+          padding: 24px 16px;
 
           &:after {
             content: '';
@@ -644,10 +651,12 @@
             transform: none;
             margin-left: 0;
             display: flex;
+            margin-bottom: 18px;
             align-items: center;
             justify-content: space-between;
 
             .h5 {
+              padding: 10px 0;
               br {
                 display: none;
               }
@@ -655,7 +664,8 @@
           }
 
           .sale {
-            padding-bottom: 25px;
+            padding-bottom: 27px;
+
             p.h4 {
               font-size: 25px;
               color: #fff;
@@ -664,16 +674,26 @@
                 font-size: 17px;
               }
             }
+            form{
+              margin: 5px 0 27px;
+            }
             .grid {
               grid-template-columns: 1fr!important;
+              grid-gap: 15px;
 
               input {
                 border: 1px solid #fff;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              input, .btn{
+                height: 60px!important;
               }
 
               .btn {
                 border: 1px solid #fff;
                 width: 100%;
+                font-size: 12px;
               }
 
               input:not([type=submit]), select,
@@ -703,7 +723,7 @@
 
         p {
           font-size: 18px;
-          padding: 15px 0 30px;
+          padding: 7px 0 24px;
         }
       }
     }
@@ -719,6 +739,11 @@
     }
 
     .list {
+      margin-top: 19px;
+
+      &>* {
+        margin: 0 2vw 17px!important;
+      }
       .item {
         p {
           font-size: 14px;
@@ -736,7 +761,29 @@
     .grid-big {
       grid-template-columns: 1fr;
       margin: 0;
-      margin-top: 40px;
+      margin-top: 28px;
+      grid-gap: 15px;
+    }
+    .item {
+      .asc a{
+        width: 58px;
+        height: 58px;
+      }
+      .text{
+        padding: 19px 11px 0;
+
+        .pattern{
+          max-width: initial;
+          &>*{
+            margin-right: 70px;
+
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
     }
     .item .h4{
       margin-bottom: 20px;
@@ -744,17 +791,27 @@
   }
 
   .request {
-    margin-bottom: 38px;
+    margin-bottom: 33px;
+    margin-top: 34px;
 
     .grid-big{
       grid-gap: 20px;
+      margin-top: 9px;
+
+      & > *{
+        min-height: 60px;
+      }
     }
     .text {
       background: linear-gradient(94.22deg,#3C4DAE -.29%,#355AA3 49.14%);
-      padding: 25px 10px;
+      padding: 23px 10px;
 
       h3 {
         font-size: 22px!important;
+      }
+      p{
+        padding: 4px 0;
+        line-height: 25px;
       }
       .grid-big {
         grid-template-columns: 1fr;
@@ -773,14 +830,32 @@
       font-size: 16px!important;
       margin-bottom: 0;
     }
+    .h6{
+      margin-bottom: 10px;
+    }
+    .rating .flex{
+      margin-bottom: 16px;
+    }
     .info{
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+    }
+    .confirm{
+      margin-top: 18px;
+
+      .flex{
+        .pic{
+          margin-right: 14px;
+        }
+      }
     }
 
     .flex {
       p {
         font-size: 14px;
       }
+    }
+    .text p+p{
+      margin-top: 22px;
     }
 
     .aboutText {
@@ -796,6 +871,7 @@
 
     .grid {
       padding: 0;
+      grid-gap: 21px;
     }
 
     .rating {
